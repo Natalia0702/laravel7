@@ -11,5 +11,6 @@ use Illuminate\Notifications\Notifiable;
 class User extends Model
 {
     //campos trabalhados
-    protected $fillable = ['name', 'email', 'message', 'telefone'];
+    //protected $fillable = ['name', 'email', 'message', 'telefone'];
+    protected $tableUsers = 'users';
 }
