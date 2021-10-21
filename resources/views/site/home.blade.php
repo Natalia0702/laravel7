@@ -104,6 +104,17 @@
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="sparkline13-list">
           <br><br>
+          {{--{validação} --}}
+          @if(count($errors) != 0)
+
+          @foreach($errors->all() as $erro)
+          <p class="alert alert-danger">{{$erro}}</p>
+          @endforeach
+          @endif
+
+
+
+
           <form action="user" method="POST" class="form-horizontal" role="form">
             @csrf
             <div class="form-group">

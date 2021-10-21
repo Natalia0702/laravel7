@@ -9,6 +9,7 @@ pasta: seeds
 arquivos: DatabaseSeeder.php, UserTableSeeder.php
 comando: php artisan db:seed
 
----
+---teste de envio de email:
+https://mailtrap.io/ e php artisan tinker
 
 --}}
