@@ -25,9 +25,10 @@ class ValidatorRequest extends FormRequest
     {
         return [
             'name' => 'required | string',
-            'email' => 'required | email',
-            'telefone' => 'required',
-            'message' => 'required'
+            'email' => 'required | unique:users',
+            'message' => 'required',
+            'phone' => 'required',
+            'doc' => 'required|max:500KB'
         ];
     }
     public function messageValidate()

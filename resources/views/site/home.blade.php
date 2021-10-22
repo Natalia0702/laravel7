@@ -115,7 +115,7 @@
 
 
 
-          <form action="user" method="POST" class="form-horizontal" role="form">
+          <form action="user" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
               <br>
@@ -130,9 +130,9 @@
                 <div class="col-md-4">
                   <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" value="">
                 </div>
-                <label for="inputTelefone" class="col-md-2 control-label">Telefone:</label>
+                <label for="inputPhone" class="col-md-2 control-label">Número de Telefone:</label>
                 <div class="col-md-4">
-                  <input type="text" class="form-control mask_phone_with_ddd" id="telefone" name="telefone" placeholder="telefone" value="">
+                  <input type="text" class="form-control mask_phone_with_ddd" id="phone" name="phone" placeholder="(31)9 00000000" value="">
                 </div>
               </div>
               <br>
@@ -141,7 +141,7 @@
                 <textarea class="form-control" name="message" aria-label="With textarea"></textarea>
               </div>
               <br>
-              <div><input name="fileUser" type="file"></div>
+              <div><input name="doc" type="file"></div>
 
               <br>
             </div>

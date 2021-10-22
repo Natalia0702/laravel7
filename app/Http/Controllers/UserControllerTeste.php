@@ -15,7 +15,7 @@ class UserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'message' => $request->message,
-            'telefone' => $request->telefone
+            'phone' => $request->phone
         ]);
         echo "Usuário cadastrado com sucesso!";
         */

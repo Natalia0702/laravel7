@@ -6,7 +6,7 @@
       <p> Os dados de usuário cadastrados são:</p>
       <p> Nome: {{$data->name}}</p>
       <p> email: {{$data->email}}</p>
-      <p> telefone: {{$data->telefone}}</p>
+      <p> phone: {{$data->phone}}</p>
       <p> mensagem enviada: {{$data->message}}</p>
 </body>
 

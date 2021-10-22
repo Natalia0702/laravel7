@@ -29,17 +29,19 @@ class userController extends Controller
         $data->name = $request->name;
         $data->email = $request->email;
         $data->message = $request->message;
-        $data->telefone = $request->telefone;
+        $data->phone = $request->phone;
+        $data->doc = ($request->doc)->store('doc');
         $data->save();
-
+        //dd($data);
 
         Mail::to($data->email)->send(new RegistrationMail($data));
 
         return 'Usuário: ' . $data->name . ' Cadastrado com sucesso!!';
+        return $data;
         /*
         //senha_enc = md5($dados->text_senha); to use encrypted password 
         //echo 'Usuário = ' . $name . '<br>' . 'Email: ' . $email;
-        return $dados;
+       
         */
     }
 

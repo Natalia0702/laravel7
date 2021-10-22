@@ -20,7 +20,9 @@ class CreateUsersTable extends Migration
 
             $table->longText('message', 500);
 
-            $table->string('telefone', 10);
+            $table->string('phone');
+
+            $table->string('doc');
 
             $table->rememberToken();
 

@@ -12,7 +12,7 @@ class UserTableSeeder extends Seeder
             'name' => Str::random(10),
             'email' => Str::random(10) . '@gmail.com',
             'message' => Str::random(10),
-            'telefone' => Str::random(10)
+            'phone' => Str::random(11)
         ];
 
         DB::table('users')->insert($data);
